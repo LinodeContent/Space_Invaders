@@ -7,12 +7,15 @@ build:
   steps:
     # A step that executes `pip install` command
     - install-packages:
-        packages: python-pygame
+        packages: python-pygame git
 
     # A custom script step, name value is used in the UI
     # and the code value contains the command that get executed
     - script:
         name: python unit test
         code: |
-          echo "Hello World"
-          #python /usr/bin/python spaceinvaders.py
+          echo "Cloning repository"
+          git clone git@github.com:LinodeContent/Space_Invaders.git
+          cd Space_Invaders
+          which python
+          python /usr/bin/python spaceinvaders.py
