@@ -18,4 +18,4 @@ build:
           git clone https://github.com/LinodeContent/Space_Invaders.git
           cd Space_Invaders
           which python
-          python /usr/bin/python spaceinvaders.py
+          #python /usr/bin/python spaceinvaders.py
