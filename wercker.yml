@@ -16,4 +16,4 @@ build:
     - script:
         name: python unit test
         code: |
-          python spaceinvaders.py
+          python /usr/bin/python spaceinvaders.py
